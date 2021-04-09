@@ -22,7 +22,9 @@ public class CountBalls : MonoBehaviour
 
         if (other.gameObject.CompareTag("Ball")&&other.gameObject!=null){
             //other.gameObject.SetActive(false);
-            SwarmBall swarmBall = other.gameObject.GetComponent<SwarmBall>();
+            //FlyingSwarmBallController swarmBall = other.gameObject.GetComponent<FlyingSwarmBallController>();
+            //swarmBall.isCollected = true;
+            SwarmBallOld swarmBall = other.gameObject.GetComponent<SwarmBallOld>();
             swarmBall.IsCollected = true;
             Count += 1;
             CounterText.text = "Count : " + Count;

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2058837594172842058}
   - component: {fileID: 2058837594172842059}
   - component: {fileID: 2058837594172842060}
-  - component: {fileID: 3153846830304558139}
+  - component: {fileID: 1227816568774114725}
+  - component: {fileID: 700401250314433819}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Ball
@@ -94,7 +95,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3153846830304558139
+--- !u!114 &1227816568774114725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058837594172842061}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36c55fcc26ef4b48848c19ddf4f2876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  isCollected: 0
+--- !u!114 &700401250314433819
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +118,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2058837594172842061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e297a62acb77cf44cbba5e980ffe176e, type: 3}
+  m_Script: {fileID: 11500000, guid: e9c2a66e76dfc9747bfb883a585fe9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isCollected: 0
+  speed: 0
+  batteryDepletionSpeed: 0.001

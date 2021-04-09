@@ -74,4 +74,6 @@ crashlytics-build.properties
 .vscode/*
 WebGL Builds/
 connectwebgl.zip
-webgl_snaring
+webgl_sharing/*
+
+Assets/Scripts/*cs.meta
